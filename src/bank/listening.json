@@ -1,0 +1,70 @@
+[
+  {
+    "id": "demo-listening-01",
+    "demo": true,
+    "section": "listening",
+    "examTask": 5,
+    "source": "демо из макета, не ФИПИ",
+    "tags": { "difficulty": 3, "rarity": 2, "topic": "Путешествия", "vocab": "B1" },
+    "trap": { "name": "Тему упомянули, а вывод другой" },
+    "question": "What does Mark say about the hostel?",
+    "options": [
+      { "text": "It was cheaper than he had expected.", "note": "Про цену говорят, но «no surprises» значит «как и ожидал», а не «дешевле»." },
+      { "text": "It was close to the city centre.", "note": "«Miles from the centre» — это ожидание. «Turned out» — факт: десять минут пешком." },
+      { "text": "It had a friendly atmosphere.", "note": "Про атмосферу Марк не говорит ни слова.", "quiet": true }
+    ],
+    "answer": 2,
+    "audio": {
+      "src": "media/demo-listening-01/recording.m4a",
+      "duration": 91.68,
+      "segments": [
+        { "from": 30.08, "to": 32.38, "kind": "q" },
+        { "from": 32.58, "to": 38.83, "kind": "a" },
+        { "from": 50.25, "to": 56.37, "kind": "a" }
+      ]
+    },
+    "transcript": [
+      { "t": 0.6, "who": "Interviewer", "text": "Today we're talking to Mark Hughes, who has just come back from his first solo trip." },
+      { "t": 5.83, "who": "Mark", "text": "Hi, thanks for having me." },
+      { "t": 8.41, "who": "Interviewer", "text": "So why Lisbon?" },
+      { "t": 9.9, "who": "Mark", "text": "Honestly, the flights were cheap, and a friend of mine had been there twice." },
+      { "t": 15.75, "who": "Interviewer", "text": "Did you plan much before you went?" },
+      { "t": 18.13, "who": "Mark", "text": "Not really. I booked a hostel, downloaded a map, and that was about it." },
+      { "t": 23.81, "who": "Interviewer", "text": "So, you spent a week there last spring." },
+      { "t": 26.75, "who": "Mark", "text": "That's right, my first trip on my own." },
+      { "t": 30.23, "who": "Interviewer", "text": "And what about the hostel itself?", "key": "q" },
+      { "t": 32.73, "who": "Mark", "text": "I'd read that the hostel was miles from the centre, but it turned out to be a ten-minute walk.", "key": "a" },
+      { "t": 39.18, "who": "Interviewer", "text": "Was it easy to book?" },
+      { "t": 40.69, "who": "Mark", "text": "Very. I did it on my phone in about two minutes." },
+      { "t": 45.03, "who": "Interviewer", "text": "And the other guests?" },
+      { "t": 46.53, "who": "Mark", "text": "Mostly students from Germany and Spain." },
+      { "t": 50.4, "who": "Mark", "text": "Price-wise, it cost exactly what the website said. No surprises there.", "key": "a" },
+      { "t": 56.72, "who": "Interviewer", "text": "What surprised you most about the city?" },
+      { "t": 59.24, "who": "Mark", "text": "The hills. Nobody warns you how steep the streets are." },
+      { "t": 63.68, "who": "Interviewer", "text": "Would you go back?" },
+      { "t": 65.13, "who": "Mark", "text": "Definitely, but next time in autumn, when it's less crowded." },
+      { "t": 69.98, "who": "Interviewer", "text": "Any advice for people travelling alone for the first time?" },
+      { "t": 73.52, "who": "Mark", "text": "Keep a paper copy of your bookings. My phone died on day two." },
+      { "t": 78.63, "who": "Interviewer", "text": "That sounds stressful." },
+      { "t": 80.32, "who": "Mark", "text": "It was, for about an hour. Then I found a café with a charger and very good coffee." },
+      { "t": 87.09, "who": "Interviewer", "text": "Mark, thank you for talking to us." },
+      { "t": 89.84, "who": "Mark", "text": "My pleasure." }
+    ],
+    "review": {
+      "fragments": [
+        { "id": "f1", "at": 32.58, "to": 38.83, "who": "Mark", "text": "I'd read that the hostel was miles from the centre, but it [[ev:turned out to be a ten-minute walk]]." },
+        { "id": "f2", "at": 50.25, "to": 56.37, "who": "Mark", "text": "[[lure:Price-wise, it cost]] exactly what the website said. No surprises there." }
+      ],
+      "steps": [
+        { "say": "Вопрос: что Марк говорит о хостеле.", "focus": "question", "audio": "media/demo-listening-01/step-1.m4a" },
+        { "say": "I'd read that the hostel was miles from the centre, but it turned out to be a ten-minute walk.", "lang": "en", "focus": "f1", "audio": "media/demo-listening-01/step-2.m4a" },
+        { "say": "«Miles from the centre» — это то, что он читал. После «but it turned out» идёт факт: десять минут пешком.", "focus": "f1", "show": ["f1.ev"], "audio": "media/demo-listening-01/step-3.m4a" },
+        { "say": "Значит, верный ответ второй: хостел близко к центру.", "focus": "o2", "show": ["o2"], "audio": "media/demo-listening-01/step-4.m4a" },
+        { "say": "Price-wise, it cost exactly what the website said. No surprises there.", "lang": "en", "focus": "f2", "show": ["f2.lure"], "audio": "media/demo-listening-01/step-5.m4a" },
+        { "say": "Про цену говорят, поэтому тянет выбрать первый вариант. Но «no surprises» значит «как и ожидал», а не «дешевле».", "focus": "o1", "show": ["o1"], "audio": "media/demo-listening-01/step-6.m4a" },
+        { "say": "Это и есть подвох: тему назвали, а вывод другой.", "focus": "trap", "show": ["trap"], "audio": "media/demo-listening-01/step-7.m4a" },
+        { "say": "А про атмосферу Марк не говорит ничего.", "focus": "o3", "show": ["o3"], "audio": "media/demo-listening-01/step-8.m4a" }
+      ]
+    }
+  }
+]
